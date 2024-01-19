@@ -9,10 +9,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.springboot3.demo.domain.Article;
-import com.springboot3.demo.dto.AddArticleRequest;
-import com.springboot3.demo.dto.UpdateArticleRequest;
-import com.springboot3.demo.repository.BlogRepository;
+import com.springboot3.demo.article.domain.Article;
+import com.springboot3.demo.article.dto.AddArticleRequest;
+import com.springboot3.demo.article.dto.UpdateArticleRequest;
+import com.springboot3.demo.article.repository.BlogRepository;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

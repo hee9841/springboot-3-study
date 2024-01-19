@@ -1,16 +1,15 @@
-package com.springboot3.demo.controller;
+package com.springboot3.demo.article.controller;
 
-import com.springboot3.demo.domain.Article;
-import com.springboot3.demo.dto.ArticleListViewResponse;
-import com.springboot3.demo.dto.ArticleViewResponse;
-import com.springboot3.demo.service.BlogService;
+import com.springboot3.demo.article.domain.Article;
+import com.springboot3.demo.article.dto.ArticleListViewResponse;
+import com.springboot3.demo.article.dto.ArticleViewResponse;
+import com.springboot3.demo.article.service.BlogService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RequiredArgsConstructor

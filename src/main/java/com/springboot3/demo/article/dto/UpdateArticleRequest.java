@@ -1,4 +1,4 @@
-package com.springboot3.demo.dto;
+package com.springboot3.demo.article.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

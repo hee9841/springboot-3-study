@@ -1,4 +1,4 @@
-package com.springboot3.demo.domain;
+package com.springboot3.demo.article.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

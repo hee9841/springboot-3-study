@@ -1,6 +1,6 @@
-package com.springboot3.demo.dto;
+package com.springboot3.demo.article.dto;
 
-import com.springboot3.demo.domain.Article;
+import com.springboot3.demo.article.domain.Article;
 import lombok.Getter;
 
 @Getter

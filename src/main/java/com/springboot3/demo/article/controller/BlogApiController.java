@@ -1,10 +1,10 @@
-package com.springboot3.demo.controller;
+package com.springboot3.demo.article.controller;
 
-import com.springboot3.demo.domain.Article;
-import com.springboot3.demo.dto.AddArticleRequest;
-import com.springboot3.demo.dto.ArticleResponse;
-import com.springboot3.demo.dto.UpdateArticleRequest;
-import com.springboot3.demo.service.BlogService;
+import com.springboot3.demo.article.domain.Article;
+import com.springboot3.demo.article.dto.AddArticleRequest;
+import com.springboot3.demo.article.dto.ArticleResponse;
+import com.springboot3.demo.article.dto.UpdateArticleRequest;
+import com.springboot3.demo.article.service.BlogService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

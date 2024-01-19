@@ -1,12 +1,11 @@
-package com.springboot3.demo.service;
+package com.springboot3.demo.article.service;
 
-import com.springboot3.demo.domain.Article;
-import com.springboot3.demo.dto.AddArticleRequest;
-import com.springboot3.demo.dto.UpdateArticleRequest;
-import com.springboot3.demo.repository.BlogRepository;
+import com.springboot3.demo.article.domain.Article;
+import com.springboot3.demo.article.dto.AddArticleRequest;
+import com.springboot3.demo.article.dto.UpdateArticleRequest;
+import com.springboot3.demo.article.repository.BlogRepository;
 import jakarta.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

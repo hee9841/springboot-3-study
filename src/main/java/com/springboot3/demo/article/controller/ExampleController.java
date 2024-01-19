@@ -1,4 +1,4 @@
-package com.springboot3.demo.controller;
+package com.springboot3.demo.article.controller;
 
 import java.time.LocalDate;
 import java.util.List;
