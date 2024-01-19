@@ -28,7 +28,8 @@ public class WebSecurityConfig {
     @Bean
     public WebSecurityCustomizer configure() {
         //static 하위 경로에 있는 리소스, h2 데이터를 확인하는 h2 console 하위 url을 대상으로 ignore
-        return (web) -> web.ignoring().requestMatchers(PathRequest.toH2Console()) //3.X 이후 변경
+        return (web) -> web.ignoring()
+//            .requestMatchers(PathRequest.toH2Console()) //3.X 이후 변경
             .requestMatchers("/static/**");
     }
 
@@ -36,16 +37,16 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
             .authorizeHttpRequests()
-            .requestMatchers("/login", "/signup", "/user").permitAll()
-            .anyRequest().authenticated()
+                .requestMatchers("/login", "/signup", "/user").permitAll()
+                .anyRequest().authenticated()
             .and()
             .formLogin()
-            .loginPage("/login")
-            .defaultSuccessUrl("/articles")
+                .loginPage("/login")
+                .defaultSuccessUrl("/articles")
             .and()
             .logout()
-            .logoutSuccessUrl("/login")
-            .invalidateHttpSession(true)    //logout 완료 후 세션 전체을 삭제할지 여부를 설정
+                .logoutSuccessUrl("/login")
+                .invalidateHttpSession(true)    //logout 완료 후 세션 전체을 삭제할지 여부를 설정
             .and()
             .csrf().disable()   //csrf 공격을 방지하기 위해서 활성화하는게 좋지만 실습을 편리하게 하기 위해 비활성화
             .build();

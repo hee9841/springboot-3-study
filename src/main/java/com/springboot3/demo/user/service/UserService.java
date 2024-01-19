@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     private final UserRepository userRepository;
-    private BCryptPasswordEncoder encoder;
+    private final BCryptPasswordEncoder encoder;
 
     public Long save(AddUserRequest userRequest) {
         return userRepository.save(User.builder()

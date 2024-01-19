@@ -1,6 +1,7 @@
 package com.springboot3.demo.user.domain;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -19,7 +20,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Table(name= "users")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Enabled
+@Entity
 public class User implements UserDetails { //Spring security의 UserDetails를 상속박음
 
     @Id
