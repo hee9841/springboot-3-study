@@ -2,7 +2,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: ture
@@ -17,3 +17,9 @@ spring:
 #  sql:
 #    init:
 #      data-locations: import.sql
+
+
+jwt:
+  issuer: ajufresh@gmai.com
+  secret: studySpringbootBase64NeedToSizeMoreThan256Bite
+
