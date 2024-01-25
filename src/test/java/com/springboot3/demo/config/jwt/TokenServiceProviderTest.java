@@ -21,7 +21,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 @SpringBootTest
-class TokenProviderTest {
+class TokenServiceProviderTest {
 
     @Autowired
     private TokenProvider tokenProvider;
