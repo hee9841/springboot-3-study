@@ -14,6 +14,16 @@ spring:
   h2:
     console:
       enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: d
+            client-secret: d
+          scope:
+            - email
+            - profile
 #  sql:
 #    init:
 #      data-locations: import.sql
